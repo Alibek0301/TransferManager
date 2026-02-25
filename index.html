@@ -508,9 +508,9 @@ document.getElementById('order-form').onsubmit = function(e){
   const q = document.getElementById('question').value.trim();
   let msg = '';
   if(lang==="kk"){
-    msg = `Сәлеметсіз бе! Менің атым: ${name}.%0AСұрағым: ${q}`;
+    msg = `Сәлеметсіз бе! Менің атым: ${name}.\nСұрағым: ${q}`;
   } else {
-    msg = `Здравствуйте! Меня зовут: ${name}.%0AВопрос: ${q}`;
+    msg = `Здравствуйте! Меня зовут: ${name}.\nВопрос: ${q}`;
   }
   window.open("https://wa.me/77769999697?text=" + encodeURIComponent(msg), "_blank");
   modalBg.style.display = "none";
